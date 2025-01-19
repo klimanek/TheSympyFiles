@@ -24,8 +24,9 @@ f_plot = plot(
     show=False,
 )
 
-f_plot.save("extrema_plot.pdf")
 f_plot.show()
+f_plot.save("extrema_plot.pdf")
+f_plot.close()
 
 print(f"f(x) = {f}")
 print(f"df(x) = {diff(f, x)}")
